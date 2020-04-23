@@ -30,7 +30,6 @@ def merge(half1, half2)
   elsif half1[0] < half2[0]
    [half1[0]] + merge(half1[1..half1.length], half2)
   else 
-    # The reason I need to use 1..half2.length is because half2 is its own array, so we are adding the first element of half2 to the array we are returning to merge.
     [half2[0]] + merge(half1, half2[1..half2.length])
   end
 end
