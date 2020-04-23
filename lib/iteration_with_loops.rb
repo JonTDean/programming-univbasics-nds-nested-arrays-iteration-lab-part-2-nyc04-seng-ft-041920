@@ -34,7 +34,3 @@ def merge(half1, half2)
     [half2[0]] + merge(half1, half2[1..half2.length])
   end
 end
-
-# p merge_sort([10, 2, 4 ,3, 1, 7, 9, 8])
-# p merge_sort([[14, 2, 4, 5], [7, 50, 10, 6], [3, 5, 5, 4], [12, 12, 10, 3]])
-# p find_min_in_nested_arrays([[14, 2, 10], [7, 5, 11], [3, 5, 1], [13, 12, 12]])
