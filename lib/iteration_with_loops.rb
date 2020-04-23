@@ -4,7 +4,7 @@ def find_min_in_nested_arrays(src)
 
   array.each do | x |
     
-    # After each nested array is sorted, I'm going to take the nested array and return the smallest number to another array
+    # After each nested array is sorted, I'm going to take the nested array and return the smallest number to an array
     smallest_nested_nums << x[0]
   end
 
