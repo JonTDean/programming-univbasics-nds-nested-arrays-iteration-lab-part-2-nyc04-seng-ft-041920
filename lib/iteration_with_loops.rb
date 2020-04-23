@@ -22,7 +22,6 @@ def merge_sort(array)
 end
 
 def merge(half1, half2)
-  # p half1[0][0]
   if half1.empty?
     half2
   elsif half2.empty?
