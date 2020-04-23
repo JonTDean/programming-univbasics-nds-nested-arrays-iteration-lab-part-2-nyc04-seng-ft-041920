@@ -9,6 +9,7 @@ def merge(array_matrix)
     merge(array_matrix)
   else
     middle = (array_matrix.length / 2) - 1
+    left << array_matrix[0..array_matrix]
   end
 end
 
