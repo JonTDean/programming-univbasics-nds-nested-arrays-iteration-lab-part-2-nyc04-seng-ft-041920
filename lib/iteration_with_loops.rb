@@ -22,12 +22,12 @@ end
 def merge_sort(half1, half2)
   if half1.empty?
     half2
-  elsif half.empty?
+  elsif half2.empty?
     half1
   elsif half1.first < half2.first
    [half1.first] + merge(half1[1..half1], half2)
   else 
     # The reason I need to use 1..half2.length is because half2 is its own array, so we are adding the first element of half2 to the array we are returning to merge.
-    [half.first] + merge(half1, half2[1..half2.length])
+    [half2.first] + merge(half1, half2[1..half2.length])
 end
 end
