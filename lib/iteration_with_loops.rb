@@ -10,6 +10,8 @@ def find_min_in_nested_arrays(src)
 end
 
 def merge_sort(array)
+  
+  # Taking into account each nested index i'm going to iterate over each index and sort the nested array from smallest to largest.
   array.each do | i |
     if i.length <= 1
       merge_sort(i)
