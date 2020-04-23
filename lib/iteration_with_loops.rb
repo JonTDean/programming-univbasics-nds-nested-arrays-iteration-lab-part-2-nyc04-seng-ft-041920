@@ -1,21 +1,28 @@
 def find_min_in_nested_arrays(src)
-  # src will be an array of arrays of integers
-  # Produce a new Array that contains the smallest number of each of the nested arrays
-  merge(src)
+  array = merge_sort(src)
+  smallest_nested_nums = []
+
+  array.each do | x |
+    smallest_nested_nums << x[0]
+  end
+
+  return smallest_nested_nums
 end
 
 def merge_sort(array)
-  if array.length <= 1
-    merge_sort(array)
-  else
-    middle = (array.length / 2) - 1
-    left = array[0...middle]
-    right = array[middle..array.length]
+  array.each do | i |
+    if i.length <= 1
+      merge_sort(i)
+    else
+      middle = (i.length / 2) - 1
+      left = i[0...middle]
+      right = i[middle..i.length]
 
-    # puts left
-    # puts right
-    # p left, right
-    merge(left, right)
+      # puts left
+      # puts right
+      # p left, right
+      merge(left, right)
+    end
   end
 end
 
