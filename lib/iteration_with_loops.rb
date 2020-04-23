@@ -3,8 +3,6 @@ def find_min_in_nested_arrays(src)
   smallest_nested_nums = []
 
   array.each do | x |
-    
-    # After each nested array is sorted, I'm going to take the nested array and return the smallest number to an array
     smallest_nested_nums << x[0]
   end
 
@@ -12,22 +10,27 @@ def find_min_in_nested_arrays(src)
 end
 
 def merge_sort(array)
+ sorted = []
   
-  # Taking into account each nested index i'm going to iterate over each index and sort the nested array from smallest to largest.
   array.each do | i |
     if i.length <= 1
       merge_sort(i)
     else
-      middle = (i.length / 2) - 1
+      if i.length == 2 # If array length is equal to 2 it removes the second element
+        middle = (i.length / 2)
+      else 
+        middle = (i.length / 2) - 1 # Handles cases bigger than 
+      end
       left = i[0...middle]
       right = i[middle..i.length]
 
       # puts left
       # puts right
       # p left, right
-      merge(left, right)
+      sorted << merge(left, right)
     end
   end
+  return sorted
 end
 
 def merge(half1, half2)
