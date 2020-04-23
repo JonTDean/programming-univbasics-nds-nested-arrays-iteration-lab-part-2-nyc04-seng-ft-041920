@@ -6,6 +6,8 @@ end
 
 def merge(array_matrix)
   if array_matrix.length <= 1
+    merge(attray_matrix)
+  end
 end
 
 def merge_sort(half1, half2)
