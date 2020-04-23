@@ -8,6 +8,7 @@ def merge(array_matrix)
   if array_matrix.length <= 1
     merge(array_matrix)
   else
+    middle = (array_matrix.length / 2) - 1
   end
 end
 
