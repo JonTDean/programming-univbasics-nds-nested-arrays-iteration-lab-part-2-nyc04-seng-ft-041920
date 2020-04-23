@@ -6,3 +6,5 @@ end
 
 def merge(array_matrix)
 end
+
+def merge_sort
