@@ -5,7 +5,7 @@ def find_min_in_nested_arrays(src)
 end
 
 def merge(array_matrix)
-  
+  if array_matrix.length <= 1
 end
 
 def merge_sort(half1, half2)
