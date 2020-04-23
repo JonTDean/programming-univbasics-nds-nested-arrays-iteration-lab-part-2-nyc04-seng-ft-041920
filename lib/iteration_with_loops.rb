@@ -8,3 +8,6 @@ def merge(array_matrix)
 end
 
 def merge_sort(half1, half2)
+  
+  
+end
