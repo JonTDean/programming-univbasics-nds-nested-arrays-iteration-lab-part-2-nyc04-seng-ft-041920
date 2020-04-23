@@ -7,6 +7,7 @@ end
 def merge(array_matrix)
   if array_matrix.length <= 1
     merge(array_matrix)
+  else
   end
 end
 
